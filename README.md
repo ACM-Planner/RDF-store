@@ -27,7 +27,7 @@ Run Docker container:
 docker run -d \
   --name fuseki \
   --publish 3030:3030 \
-  --e ADMIN_PASSWORD=$RDF_PASSWORD \
+  --env ADMIN_PASSWORD=$RDF_PASSWORD \
   --volumes-from fuseki-data \
   stain/jena-fuseki
 ```
